@@ -145,6 +145,7 @@ p{
   .text-container {
     padding: 20px;
     text-align: left;
+    padding-top: 4rem;
   }
 
   .carousel-item {
