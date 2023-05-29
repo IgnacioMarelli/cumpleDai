@@ -1,10 +1,13 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+
 var carousel = document.getElementById('myCarousel');
 var audioElements = carousel.querySelectorAll('audio');
 var indicators = document.getElementById('carousel-indicators');
 var slides = carousel.querySelectorAll('.carousel-inner .carousel-item');
 let inicio = document.getElementById('audio1');
-inicio.play();
+document.addEventListener('DOMContentLoaded', function() {
+  inicio.play();
+});
+
 
 // Evento que se activa cuando se cambia la diapositiva
 carousel.addEventListener('slide', function (event) {
@@ -58,4 +61,3 @@ carousel.querySelectorAll('.carousel-control-prev, .carousel-control-next').forE
     }
   });
 });
-})
