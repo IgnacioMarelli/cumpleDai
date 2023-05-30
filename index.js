@@ -51,5 +51,8 @@ document.querySelectorAll('.carousel-control-prev, .carousel-control-next').forE
     }
   });
 });
-inicio.play()
+setTimeout(() => {
+  inicio.play()
+}, 3000);
+
 })
