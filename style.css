@@ -1,21 +1,30 @@
-main{
+main {
   background-color: black;
   width: 100%;
   height: 100%;
 }
-.img{
+
+body {
+  background-color: black;
+}
+
+.img {
   height: 300px;
 }
-.card{
+
+.card {
   width: 100%;
 }
-#carouselExampleIndicators{
+
+#carouselExampleIndicators {
   margin-top: 5rem;
 }
+
 #myCarousel {
   position: relative;
   width: 90%;
 }
+
 .carousel-item {
   position: relative;
   display: flex;
@@ -37,13 +46,14 @@ main{
 
 .text-container h3 {
   margin-top: 0;
-
 }
-p{
+
+p {
   font-size: x-large;
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
 .carousel-content img {
   max-width: 100%;
   height: auto;
@@ -102,21 +112,7 @@ p{
 /* Estilos de los controles */
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -129,13 +125,55 @@ p{
 .carousel-control-prev {
   left: 20px;
 }
-.cc{
-  width: 5rem;
+
+.sd {
+  opacity: 0.6;
+  position: fixed;
+  width: 96%;
+  height: 10%;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/238/569/165/beautiful-dark-evening-galaxy-wallpaper-preview.jpg);
+  top: 99%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.carousel-control-prev {
+  left: 0;
 }
 
 .carousel-control-next {
-  right: 20px;
+  right: 0;
 }
+
+.cc {
+  width: 30px;
+  height: 30px;
+  padding-left: 65px;
+  padding-right: 65px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.cc:hover {
+  opacity: 1;
+}
+
+/* Media Queries para dispositivos móviles */
+
 @media (max-width: 767px) {
   .carousel-content {
     flex-direction: column;

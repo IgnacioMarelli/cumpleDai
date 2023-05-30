@@ -37,7 +37,7 @@ carousel.addEventListener('slide', function (event) {
 });
 
 // Agregar eventos a los indicadores para cambiar de diapositiva
-carousel.querySelectorAll('.carousel-control-prev, .carousel-control-next').forEach(function (control) {
+document.querySelectorAll('.carousel-control-prev, .carousel-control-next').forEach(function (control) {
   control.addEventListener('click', function () {
     var targetSlide = this.getAttribute('data-slide');
     var activeIndex = Array.from(slides).findIndex(function (slide) {
