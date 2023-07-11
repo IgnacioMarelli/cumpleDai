@@ -130,7 +130,7 @@ p {
   position: fixed;
   width: 96%;
   height: 10%;
-  background-image: url(https://p4.wallpaperbetter.com/wallpaper/238/569/165/beautiful-dark-evening-galaxy-wallpaper-preview.jpg);
+  /*background-image: url(https://p4.wallpaperbetter.com/wallpaper/238/569/165/beautiful-dark-evening-galaxy-wallpaper-preview.jpg);*/
   top: 99%;
   transform: translateY(-50%);
   z-index: 9999;
